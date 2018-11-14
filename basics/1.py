@@ -17,13 +17,14 @@ else:
 import sys; sep = '==='; sys.stdout.write('\n' + sep + '\n')  # semicolons only in line
 
 a, b, c = 1, 1.2, 'john smith'
-
 del a, b
-
 a = c[0:4]
 print(a)  #john
 
-inp = input('\nWrite sth.:\n')
+nothing = None
+print('Null concept is named:', nothing, sep=' ', end='\n\n')
+
+inp = input('Write sth.:\n')
 print(inp)
 
 input('Any key for exit\n')
