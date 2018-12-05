@@ -19,7 +19,7 @@ import sys; sep = '==='; sys.stdout.write('\n' + sep + '\n')  # semicolons only 
 a, b, c = 1, 1.2, 'john smith'
 del a, b
 a = c[0:4]
-print(a)  #john
+print(a)  # john
 
 nothing = None
 print('Null concept is named:', nothing, sep=' ', end='\n\n')

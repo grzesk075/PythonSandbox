@@ -88,6 +88,13 @@ print('Squares list (using list comprehensions - generator expressions):', [x**2
 # [(1, 2), (1, 3), (1, 4), (3, 1), (3, 2), (3, 4), (5, 1), (5, 2), (5, 3), (5, 4)]
 print('Combination in tuple list - generator expression:', [(x, y) for x in [1, 3, 5] for y in range(1, 5) if x != y])
 
+letters = ['a', 'b', 'c', 'd']
+b_idx = letters.index('b')  # 1
+letters[0:2]  # ['a', 'b']
+letters[-1:]  # ['d']
+letters[-2:]  # ['c', 'd']
+letters[-2:-1]  # ['c']
+
 # yield keyword instead of return keyword is used for create generator, which is also an iterator
 import random
 
