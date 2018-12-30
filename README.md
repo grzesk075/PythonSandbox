@@ -5,11 +5,25 @@ Space for Python learning and experiments.
 After Python installation on windows,
 path for python.exe and Python Package Manager pip.exe
 should be manually added to PATH system variable.
-To install module e.g. pytest type in shell
+To install module e.g. pytest (newest) type in shell
 > pip install -U pytest
 
 On Linux pip should be installed manually (e.g. for Mint distribution)
 > sudo apt-get install python3-pip
+
+To make requirements.txt file type
+> pip freeze > requirements.txt
+
+To update your environment with requirements type
+> pip install -r requirements.txt
+
+To upgrade pytest package to newest version type
+> pip install --upgrade pytest
+
+Packages can be searched on https://pypi.org .
+
+You can also save wheel archives, when you have wheel package installed.
+> pip wheel -r requirements.txt
 
 ### Virtual Environments
 This concept allows to have separate folders with links to particular
