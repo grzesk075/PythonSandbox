@@ -8,6 +8,8 @@ should be manually added to PATH system variable.
 To install module e.g. pytest (newest) type in shell
 > pip install -U pytest
 
+Library root for installed packages is *site-packages* folder in Python environment.
+
 On Linux pip should be installed manually (e.g. for Mint distribution)
 > sudo apt-get install python3-pip
 
@@ -22,7 +24,7 @@ To upgrade pytest package to newest version type
 
 Packages can be searched on https://pypi.org .
 
-You can also save wheel archives, when you have wheel package installed.
+You can also save wheel archives with packages, when you have wheel package installed.
 > pip wheel -r requirements.txt
 
 ### Virtual Environments
