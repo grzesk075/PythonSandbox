@@ -1,10 +1,10 @@
 from string import Template as StrTemplate
 
 g = 'Global Variable'
-template = 'This is global variable g: $g'
+template = 'This $s global variable g: $g'
 
 def replace_placeholders(template):
-    return StrTemplate(template).substitute(globals())
+    return StrTemplate(template).substitute(globals(), s='is')
 
 
 if __name__ == '__main__':
