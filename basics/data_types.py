@@ -28,3 +28,7 @@ print('float_huge =', float_huge)
 print('float_small =', float_small)
 
 print('complex number: ', 3+4j)
+
+i = int(23.88)  # new int 23 is a result of conversion
+print(9/2)  # float result 4.5
+print(4.5 % 2)  # float reminder 0.5
