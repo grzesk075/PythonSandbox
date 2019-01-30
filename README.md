@@ -43,3 +43,7 @@ Also running ./python link from sandbox-env/bin runs Python with
 site-packages from sandbox-env virtual environment.
 You can verify this in Python shell by
 > import sys; sys.path
+
+Logging library used for logging is conceptually similar to java log4j.
+
+There are two most popular unit tests libraries: built-in unittest and external and more powerful pytest.
