@@ -11,7 +11,7 @@ def average(values):
     Computes the arithmetic mean of a list of numbers.
 
     >>> print(average([20, 30, 70]))
-    40.01
+    40.0
 
     """
     return sum(values) / len(values)
@@ -22,8 +22,8 @@ doctest.testmod()  # performs tests embedded in docstring - wrong response is pl
 
 class MyFunctionalityTest(unittest.TestCase):
     
-    def testAverage(self):
+    def test_average(self):
         self.assertEqual(average([20, 30, 70]), 40.0)
 
 
-unittest.main()  # performs tests derived from unittest.TestCase
+# unittest.main()  # performs tests derived from unittest.TestCase
