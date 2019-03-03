@@ -65,6 +65,10 @@ print('Unpacking from ', array, ' array->list:', *array)  # Unpacking from  [1, 
 dictionary = {"n": 10}
 print('Changing dictionary to keyword arguments with ** operator:', fibonacci(**dictionary))  # fibonacci(n=10)
 
+from typing import List
+my_list_with_type_hine: List[str] = list()
+my_list_with_type_hine.append('abc')
+
 sumFunction = lambda x, y: x+y
 print('Lambda function:', sumFunction(4, 6))  # 10
 
@@ -87,6 +91,9 @@ print('Squares list (using list comprehensions - generator expressions):', [x**2
 
 # [(1, 2), (1, 3), (1, 4), (3, 1), (3, 2), (3, 4), (5, 1), (5, 2), (5, 3), (5, 4)]
 print('Combination in tuple list - generator expression:', [(x, y) for x in [1, 3, 5] for y in range(1, 5) if x != y])
+
+t = 1,2,3,4  # tuple (1, 2, 3, 4)
+a,_,_,_ = t  # a = 1
 
 letters = ['a', 'b', 'c', 'd']
 b_idx = letters.index('b')  # 1
