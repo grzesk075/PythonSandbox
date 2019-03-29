@@ -65,7 +65,8 @@ print('Unpacking from ', array, ' array->list:', *array)  # Unpacking from  [1, 
 dictionary = {"n": 10}
 print('Changing dictionary to keyword arguments with ** operator:', fibonacci(**dictionary))  # fibonacci(n=10)
 
-from typing import List
+from typing import (List, Tuple, Dict,
+                    Callable, Set)  # line continuation inside parentheses
 my_list_with_type_hine: List[str] = list()
 my_list_with_type_hine.append('abc')
 
@@ -77,7 +78,7 @@ tuples.sort(key=lambda p: -p[0])
 print('Sorted tuples descending:', tuples)  # [(3, 'c'), (2, 'b'), (1, 'a')]
 
 
-def fun(ham: str, eggs: str = 'eggs') -> str:
+def fun(ham: str, eggs: str = 'eggs') -> str:  # -> None for void return
     """Annotation and types of function"""
     print("Annotations:", fun.__annotations__)
     print("Arguments:", ham, eggs)
