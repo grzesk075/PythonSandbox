@@ -1,0 +1,5 @@
+# list of two scalars (strings) and an dictionary
+- alpha
+- beta
+- age: 25
+  tall: Yes  # denotes !!bool Yes
