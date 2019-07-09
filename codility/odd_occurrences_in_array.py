@@ -1,12 +1,13 @@
-def solution(a):
-    n = len(a)
-    if n == 1:
-        return a[0]
-    a.sort()
-    if a[0] != a[1]:
-        return a[0]
-    if a[-2] != a[-1]:
-        return a[-1]
-    for i in range(1, n - 2):
-        if a[i - 1] != a[i] != a[i + 1]:
-            return a[i]
+def solution(A):
+    A.sort()
+    occurrences_count = 0
+    previous_v = None
+    for v in A:
+        if previous_v == v:
+            occurrences_count += 1
+        elif occurrences_count % 2 == 1:
+            return previous_v
+        else:
+            occurrences_count = 1
+            previous_v = v
+    return previous_v
