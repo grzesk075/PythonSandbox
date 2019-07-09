@@ -21,6 +21,7 @@ class TestCyclicRotation(TestCase):
         self.assertEqual(solution([7, 3, 5], 3), [7, 3, 5])
         self.assertEqual(solution([7, 3, 5], 6), [7, 3, 5])
         self.assertEqual(solution([7, 3, 5], 9), [7, 3, 5])
+        self.assertEqual(solution([-1, -2, -3, -4, -5, -6], 10), [-3, -4, -5, -6, -1, -2])
 
 
 if __name__ == '__main__':
