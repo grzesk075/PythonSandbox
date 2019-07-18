@@ -1,17 +1,13 @@
-def solution(A, N):
+def solution(A, K):
     length = len(A)
-    if length <= 1 or N % length == 0:
+    if length <= 1 or K % length == 0:
         return A
 
     def _destination_index(idx):
-        return (idx + N) % length
+        return (idx + K) % length
 
-    value = A[0]
-    destination_index = _destination_index(0)
+    rotated_A = A.copy()
     for i in range(length):
-        buffer = A[destination_index]
-        A[destination_index] = value
-        value = buffer
-        destination_index = _destination_index(destination_index)
+        rotated_A[_destination_index(i)] = A[i]
 
-    return A
+    return rotated_A
